@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Item</title>
+</head>
+<body>
+    <h1>My items</h1>
+    <a href="index.html"> Homepage </a>
+
+    <h3>View my items</h3>
+
+    <button id="view">View</button>
+  
+    <table style="background-color: lemonchiffon;" id="list">
+    </table>
+
+    <br>
+
+<!-- Opdatere vare -->
+    <div style="background-color: rgb(214, 247, 240);">
+    <h4>Update item</h4>
+    <form id="formRegisterUpdate">
+            <input placeholder="Item id" id="id" required>
+        <br>
+            <input placeholder="New product name" id="productNameUpdate" required>
+        <br>
+            <input placeholder="New product price" id="productPriceUpdate" required>
+        <br>
+        <select id="categoryUpdate">
+            <option value="indoor">Indoor</option>
+            <option value="outdoor">Outdoor</option>
+            <option value="clothing">Clothing</option>
+            <option value="vehicle">Vehicle</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <input type="file" id="imageUpdate" accept="image/*" required>
+        <br> <br>
+        <button type="submit" id="submitUpdate">Update item</button>
+    </form> 
+    </div>
+
+<!-- Sletter vare -->
+    <div style="background-color: rgb(241, 173, 173);">
+    <h4>Delete item</h4>
+    <form id="formRegisterDelete">
+        <input placeholder="Item id" id="idDelete" required>
+    <button type="submit" id="submitDelete">Delete item</button>
+    </div>
+
+<script src="myItems.js" defer></script>   
+</body>
+</html>
