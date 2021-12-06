@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Settings</title>
+</head>
+<body>
+    <h1>Settings</h1>
+
+    <!-- Slet bruger -->
+    <div style="background-color: rgb(241, 173, 173);">
+        <h3>Delete user</h3>
+        <form id="formUserDelete">
+            <input placeholder="Username" id="usernameDelete" required> <br>
+            <input placeholder="Password" id="passwordDelete" required> <br>
+        <button type="submit" id="submitDelete">Delete user</button>
+    </div>
+    
+
+    <!-- Opdater brugernavn -->
+    <div style="background-color: lemonchiffon;">
+    <form id="updateUsernameForm">
+        <h3>Update username</h3>
+        <br>
+        <input type="text" id="oldUsernameUpdateUsername" placeholder="Old username" required>
+        <br>
+        <input type="text" id="oldPasswordUpdateUsername" placeholder="Old password" required>
+        <br> <br>
+        <input type="text" placeholder="New username" id="newUsername" required/>
+        <br>
+        <input id="updateUsernameSubmit" value="Update username" type="submit" />
+    </form>
+    </div>
+
+      <!-- Opdater password -->
+    <div style="background-color: rgb(245, 245, 234);">
+    <form  id="updatePasswordForm">
+        <h3>Update password</h3>
+        <br>
+        <input type="text" id="oldUsernameUpdatePassword" placeholder="Old username" required>
+        <br>
+        <input type="text" id="oldPasswordUpdatePassword" placeholder="Old password" required>
+        <br> <br>
+        <input type="text" placeholder="New password" id="newPassword" required/>
+        <br>
+        <input id="updatePasswordSubmit" value="Update password" type="submit" />
+    </form>
+    </div>
+
+    <!-- Link til forsiden -->
+    <a href="index.html"> Homepage </a>
+    
+    <script src="settings.js" defer></script>
+</body>
+</html>
