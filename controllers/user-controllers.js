@@ -1,7 +1,8 @@
 const express = require('express');
-const router = express();
 const fs = require('fs');
 const cors = require('cors');
+
+const router = express();
 
 router.use(cors());
 
@@ -57,7 +58,8 @@ router.post("/login", (req, res) => {
 //Fjern bruger
 router.delete('/delete', function (req, res) {
 
-    //Her lopper jeg igennem alle mine brugere og sletter, hvis username og password fra input matcher username og password fra users.json
+    /*Her lopper jeg igennem alle mine brugere og sletter, hvis username og password fra input 
+    matcher username og password fra users.json*/
     for (let i = 0; i < dataArray.length; i++) {
         if( dataArray[i].username == req.body.username && dataArray[i].password == req.body.password) {
             dataArray.splice(i, 1)
@@ -70,6 +72,7 @@ router.delete('/delete', function (req, res) {
             });
         };
     };
+
 });
 
 

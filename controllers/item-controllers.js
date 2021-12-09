@@ -1,14 +1,15 @@
 const express = require('express');
-const router = express();
 const fs = require('fs');
 const cors = require('cors');
 
+const router = express();
+
 router.use(cors());
 
-//Åbner databaser som javascript objekter
+//Åbner database som javascript objekter
 const dataArray = JSON.parse(fs.readFileSync('./models/items.json'));
 
-// Få produkt udfra kategori 
+// Få brugerens egne produkter
 router.get("/showUsersItems", (req, res) => {
     res.send(dataArray);
 })

@@ -1,38 +1,3 @@
 [
-    {
-        "username": "albertsteenstrup",
-        "password": "as",
-        "itemid": "idkwqskxxt",
-        "productName": "bil",
-        "price": "420",
-        "category": "indoor",
-        "image": ""
-    },
-    {
-        "username": "as",
-        "password": "as",
-        "itemid": "idkwrrybu6",
-        "productName": "bil",
-        "price": "420",
-        "category": "indoor",
-        "image": ""
-    },
-    {
-        "username": "as",
-        "password": "as",
-        "itemid": "idkwrw30br",
-        "productName": "test",
-        "price": "420",
-        "category": "outdoor",
-        "image": ""
-    },
-    {
-        "username": "alst21ag",
-        "password": "as",
-        "itemid": "idkwtvz5vk",
-        "productName": "citron",
-        "price": "5",
-        "category": "indoor",
-        "image": "C:\\fakepath\\cykel.jpg"
-    }
+
 ]
