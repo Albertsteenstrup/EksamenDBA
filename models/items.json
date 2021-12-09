@@ -1,3 +1,29 @@
 [
-
+    {
+        "username": "as",
+        "password": "123",
+        "itemid": "idkwyy4zzb",
+        "productName": "stol",
+        "price": "420 kr",
+        "category": "indoor",
+        "image": "C:\\fakepath\\stol.jpg"
+    },
+    {
+        "username": "as",
+        "password": "123",
+        "itemid": "idkwyy5zmx",
+        "productName": "lyskæde",
+        "price": "21 kr",
+        "category": "outdoor",
+        "image": "C:\\fakepath\\lyskæde.jpg"
+    },
+    {
+        "username": "em",
+        "password": "123",
+        "itemid": "idkwyy6zi6",
+        "productName": "bil",
+        "price": "10000kr",
+        "category": "vehicle",
+        "image": "C:\\fakepath\\car-49278__340.jpg"
+    }
 ]
