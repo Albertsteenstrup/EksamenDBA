@@ -5,6 +5,24 @@ const router = require('../controllers/item-controllers');
 
 chai.use(chaiHttp);
 
+
+//Tester om applikationen opretter en vare korrekt
+describe('Items', function () {
+    describe('Post /new', function() {
+        it('should respond status code 200 ', function (done) {
+            chai
+            .request(router)
+            .post('/new')
+            .end(function(err, res) {
+                expect(err).to.be.null;
+                expect(res.status).to.equal(200)
+                done();
+            });
+        });
+    });
+});
+
+
 //Tester om applikationen henter varerne under varekategori korrekt
 describe('Items', function () {
     describe('Get /showItems', function() {
