@@ -18,16 +18,6 @@ describe('Items', function () {
                 done();
             });
         });
-        it('should return an array with a length of 5 ', function (done) {
-            chai
-            .request(router)
-            .get('/showItems')
-            .end(function(err, res) {
-                expect(err).to.be.null;
-                expect(res.body.length).to.equal(5)
-                done();
-            });
-        });
         it('should respond status code 200 ', function (done) {
             chai
             .request(router)
