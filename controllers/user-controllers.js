@@ -22,7 +22,6 @@ router.post('/new', function (req,res) {
     });
 });
 
-
 //Bruger login
 router.post("/login", (req, res) => {
 
@@ -54,7 +53,6 @@ router.post("/login", (req, res) => {
     }
 });
 
-
 //Fjern bruger
 router.delete('/delete', function (req, res) {
 
@@ -74,7 +72,6 @@ router.delete('/delete', function (req, res) {
     };
 
 });
-
 
 //Opdater username
 router.put("/username_update", (req, res) => {

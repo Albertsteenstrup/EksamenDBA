@@ -16,7 +16,7 @@ router.get("/showUsersItems", (req, res) => {
 
 //Se varer tabel kun mine
 router.get('/stored', (req, res) => {
-            res.send(dataArray)
+    res.send(dataArray)
 });
 
 //Opret en vare
@@ -70,7 +70,6 @@ router.delete('/delete/:itemid', function (req, res) {
         };
     };
 });
-
 
 // Få produkt udfra kategori 
 router.get("/showItems", (req, res) => {
